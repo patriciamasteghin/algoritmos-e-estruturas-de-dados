@@ -1,6 +1,6 @@
-algoritmo "Controle Estoque RA 5183372"
+algoritmo "Controle Estoque RA: 5183372"
 // Disciplina  : Algoritmos e Estrutura de Dados
-// Descrição   : Gerencia preços de produtos e calcula descontos
+// DescriÃ§Ã£o   : Gerencia preÃ§os de produtos e calcula descontos
 
 var
    precos: vetor [1..5] de real
@@ -16,18 +16,18 @@ fimfuncao
 inicio
    total <- 0
    escreval(" SISTEMA DE ENTRADA DE ESTOQUE ")
-   escreval("Por favor, informe o preço de 5 produtos diferentes.")
+   escreval("Por favor, informe o preÃ§o de 5 produtos diferentes.")
 
 
    para i de 1 ate 5 faca
-      escreva("Digite o preço do produto ", i, ": R$ ")
+      escreva("Digite o preÃ§o do produto ", i, ": R$ ")
       leia(precos[i])
       total <- total + precos[i]
    fimpara
 
    preco_com_desconto <- calcularDesconto(total)
 
-   escreval("        RESUMO DO INVENTÁRIO         ")
+   escreval("        RESUMO DO INVENTÃRIO         ")
 
 
 
